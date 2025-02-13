@@ -3,15 +3,16 @@
     This allows you to white-label your Jellyfin instance slightly.
     This can be used as a standalone module.
 */
-
 :root {
     --logo-url: url('https://raw.githubusercontent.com/DeadGolden0/Jellyfin-Theme/refs/heads/main/assets/BobyBanner.png');
 }
 
+/* Change the logo */
 .pageTitleWithDefaultLogo,
 .spashLogo {
     background-image: var(--logo-url) !important; /* Change the logo to the custom one */
 }
+/* Center the logo */
 .pageTitleWithLogo {
     margin-left: 0px !important; /* Remove the margin to center the logo */
 }
