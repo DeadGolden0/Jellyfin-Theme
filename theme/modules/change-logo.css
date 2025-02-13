@@ -11,5 +11,7 @@
 .pageTitleWithDefaultLogo,
 .spashLogo {
     background-image: var(--logo-url) !important; /* Change the logo to the custom one */
+}
+.pageTitleWithLogo {
     margin-left: 0px !important; /* Remove the margin to center the logo */
 }
