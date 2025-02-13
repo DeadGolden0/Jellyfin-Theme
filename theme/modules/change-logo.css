@@ -11,4 +11,5 @@
 .pageTitleWithDefaultLogo,
 .spashLogo {
     background-image: var(--logo-url) !important;
+    margin: 0 !important;
 }
