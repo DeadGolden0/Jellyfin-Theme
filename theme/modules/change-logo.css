@@ -10,6 +10,6 @@
 
 .pageTitleWithDefaultLogo,
 .spashLogo {
-    background-image: var(--logo-url) !important;
-    margin: 0 !important;
+    background-image: var(--logo-url) !important; /* Change the logo to the custom one */
+    margin: 0 !important; /* Remove the margin to center the logo */
 }
