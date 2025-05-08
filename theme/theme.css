@@ -1281,7 +1281,7 @@ html,
   position: absolute;	  	
   right: 0%;	  
   top: 0%;
-  border-radius: 0px 48px 0px 48px !important;
+  border-radius: 0px 12px 0px 12px !important;
 }
 
 .layout-tv .listItemIndicators .indicator {
@@ -1289,5 +1289,5 @@ html,
 }
 
 .layout-tv .listItemIndicators .countIndicator, .layout-tv .listItemIndicators .playedIndicator {
-	border-radius: 0px 48px 0px 48px !important;
+	border-radius: 0px 12px 0px 12px !important;
 }
