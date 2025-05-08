@@ -12,6 +12,7 @@
     --primary-background-transparent: rgba(35,35,35,0.5);
     --secondary-background-transparent: rgba(0,0,0,0.6);
     --rounded-cards: 15px;
+    --rounding: 12px;
     --blur: 10px;
 
     /* Alternate accents*/
@@ -1229,23 +1230,23 @@ html,
 #indexPage .sectionTitle:before {
     background: #FFFFFFCC;
     content: "";
-    height: 0.15em;
+    height: 2px;
+    border-radius: 5px;
     margin-right: 0.5em;
-    width: 1em;
+    width: 1.3em;
     display: inline-block;
 }
 #indexPage .sectionTitleTextButton > .material-icons.chevron_right {
     display: none;
 }
-.homePage .sectionTitleTextButton {
-    left: -.6em;
-}
 
 /* CustomCSS textentry */
-.emby-input,
-.emby-textarea,
-.emby-select {
-  padding: calc(0.8em - 4.5px) !important;
+#txtCustomCss,
+#txtLocalCustomCss {
+  height: 400px !important;
+  max-height: 400px !important;
+  overflow-y: scroll !important;
+  resize: vertical !important;
 }
 
 /* Main Drawer */
@@ -1253,4 +1254,14 @@ html,
 .mainDrawer {
     backdrop-filter: blur(21px);
     box-shadow: 0 0 1.9vh #000;
+}
+
+/* TEST */
+.css-10dubda:first-of-type {
+    border-top-left-radius: var(--rounding);
+    border-top-right-radius: var(--rounding);
+}
+.css-10dubda:last-of-type {
+    border-bottom-left-radius: var(--rounding);
+    border-bottom-right-radius: var(--rounding);
 }
