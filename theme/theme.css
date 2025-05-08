@@ -1239,11 +1239,11 @@ html,
     display: none;
 }
 
-#indexPage .emby-linkbutton:hover {
+#indexPage .emby-linkbutton .sectionTitle:hover {
     position: relative;
 }
 
-#indexPage .emby-linkbutton:hover:after {
+#indexPage .emby-linkbutton .sectionTitle:hover:after {
     content: "";
     position: absolute;
     bottom: -2px;
@@ -1281,6 +1281,7 @@ html,
   position: absolute;	  	
   right: 0%;	  
   top: 0%;
+  border-radius: 0px 48px 0px 48px !important;
 }
 
 .layout-tv .listItemIndicators .indicator {
