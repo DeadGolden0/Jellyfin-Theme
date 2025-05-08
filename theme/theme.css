@@ -1270,12 +1270,6 @@ html,
 }
 
 /* List Indicator */
-.cardIndicators,
-  .listItemIndicators {
-    right: 0;
-    top: 0;
-  }
-
 .countIndicator, .playedIndicator {
   font-weight: bold;
   position: absolute;	  	
