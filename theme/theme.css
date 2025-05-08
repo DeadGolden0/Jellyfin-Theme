@@ -1239,11 +1239,11 @@ html,
     display: none;
 }
 
-#indexPage .emby-linkbutton .sectionTitle:hover {
+a.emby-linkbutton .sectionTitle:hover {
     position: relative;
 }
 
-#indexPage .emby-linkbutton .sectionTitle:hover:after {
+a.emby-linkbutton .sectionTitle:hover:after {
     content: "";
     position: absolute;
     bottom: -2px;
@@ -1272,16 +1272,12 @@ html,
 /* List Indicator */
 .countIndicator, .playedIndicator {
   font-weight: bold;
-  position: absolute;	  	
-  right: 0%;	  
-  top: 0%;
+  position: absolute !important;	  	
+  right: 0% !important;	  
+  top: 0% !important;
   border-radius: 0px 12px 0px 12px !important;
 }
 
 .layout-tv .listItemIndicators .indicator {
 	top: 0px;
-}
-
-.layout-tv .listItemIndicators .countIndicator, .layout-tv .listItemIndicators .playedIndicator {
-	border-radius: 0px 12px 0px 12px !important;
 }
