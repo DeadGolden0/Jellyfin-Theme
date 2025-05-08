@@ -1270,6 +1270,23 @@ html,
 }
 
 /* List Indicator */
+.cardIndicators,
+  .listItemIndicators {
+    right: 0;
+    top: 0;
+  }
+
+.countIndicator, .playedIndicator {
+  font-weight: bold;
+  position: absolute;	  	
+  right: 0%;	  
+  top: 0%;
+}
+
+.layout-tv .listItemIndicators .indicator {
+	top: 0px;
+}
+
 .layout-tv .listItemIndicators .countIndicator, .layout-tv .listItemIndicators .playedIndicator {
 	border-radius: 0px 48px 0px 48px !important;
 }
