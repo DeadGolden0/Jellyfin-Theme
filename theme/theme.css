@@ -1218,6 +1218,7 @@ html,
     backdrop-filter: blur(var(--blur)) !important;
 }
 
+/* sectionTitle */
 #indexPage .sectionTitle {
     align-items: center;
     color: #FFFFFFCC;
@@ -1228,8 +1229,28 @@ html,
 #indexPage .sectionTitle:before {
     background: #FFFFFFCC;
     content: "";
-    height: 0.25em;
+    height: 0.15em;
     margin-right: 0.5em;
-    width: 0.25em;
+    width: 1em;
     display: inline-block;
+}
+#indexPage .sectionTitleTextButton > .material-icons.chevron_right {
+    display: none;
+}
+.homePage .sectionTitleTextButton {
+    left: -.6em;
+}
+
+/* CustomCSS textentry */
+.emby-input,
+.emby-textarea,
+.emby-select {
+  padding: calc(0.8em - 4.5px) !important;
+}
+
+/* Main Drawer */
+
+.mainDrawer {
+    backdrop-filter: blur(21px);
+    box-shadow: 0 0 1.9vh #000;
 }
