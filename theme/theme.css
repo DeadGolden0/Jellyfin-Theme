@@ -1243,11 +1243,11 @@ html,
     display: none;
 }
 
-#indexPage .sectionTitle:hover {
+#indexPage .sectionTitle:hover:not(.section0 .sectionTitle) {
     position: relative;
 }
 
-#indexPage .sectionTitle:hover:after {
+#indexPage .sectionTitle:hover:not(.section0 .sectionTitle)::after {
     content: "";
     position: absolute;
     bottom: -2px;
