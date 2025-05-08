@@ -12,6 +12,7 @@
     --primary-background-transparent: rgba(35,35,35,0.5);
     --secondary-background-transparent: rgba(0,0,0,0.6);
     --rounded-cards: 15px;
+    --rounding: 12px;
     --blur: 10px;
 
     /* Alternate accents*/
@@ -20,6 +21,9 @@
     --primary-alt3: rgb(calc(var(--primary-r) - 30), calc(var(--primary-g) - 30), calc(var(--primary-b) - 30), 0.7);
     --primary-alt4: rgb(calc(var(--primary-r) - 30), calc(var(--primary-g) - 30), calc(var(--primary-b) - 30), 0.55);
     --primary-alt5: rgb(calc(var(--primary-r) - 30), calc(var(--primary-g) - 30), calc(var(--primary-b) - 30), 0.4);
+
+    /* Alternate accent colors */
+    --darkest: 21, 28, 25;           /* #151C19 */
 }
 
 /* Setting accent color variable */
@@ -1270,14 +1274,55 @@ a.emby-linkbutton .sectionTitle:hover:after {
 }
 
 /* List Indicator */
+/*Card indicators style corner*/
+
+.cardIndicators,
+.listItemIndicators {
+  right: 0;
+  top: 0;
+}
+.mediaSourceIndicator {
+    border-radius: var(--rounding) 0px !important;
+    box-shadow: -1px 1px 5px 1px rgba(var(--darkest),.5);
+    left: 0;
+  top: 0;
+}
+.videoIndicator {
+  border-radius: 0px var(--rounding) !important;
+  box-shadow: -1px 1px 5px 1px rgba(var(--darkest),.5);
+}
 .countIndicator, .playedIndicator {
+  border-radius: 0px var(--rounding) !important;
+  box-shadow: -1px 1px 5px 1px rgba(var(--darkest),.5);
+}
+.playedIndicator {
+  background: rgba(var(--darkest), 1)
+}
+.cardIndicators {
+  position: static;
+    contain: unset;
+}
+.countIndicator, .playedIndicator {
+  color: rgba(var(--darkest), 1) !important;
   font-weight: bold;
-  position: absolute !important;	  	
-  right: 0% !important;	  
-  top: 0% !important;
-  border-radius: 0px 12px 0px 12px !important;
+      position: absolute;
+        right: 0%;
+    top: 0%;
+}
+.missingIndicator, .unairedIndicator {
+      box-shadow: 1px 1px 5px 1px rgba(var(--darkest),.5);
+      border-radius: var(--rounding) 0px !important;
+    color: rgba(var(--darkest));
+        padding: 0.3em 0.6em;
+    position: absolute;
+    font-weight: bold;
+        text-shadow: none;
+        margin: 0;
+        left: 0%;
+    top: 0%;
 }
 
-.layout-tv .listItemIndicators .indicator {
-	top: 0px;
+/* fix for changes in 10.9.x */
+[dir="ltr"] .cardIndicators {
+  right: 0em !important;
 }
