@@ -1218,10 +1218,28 @@ html,
     backdrop-filter: blur(var(--blur)) !important;
 }
 
-#indexPage .sectionTitle:before{
-    background:#fff;
-    content:"";
-    height:2px;
-    margin-right:.5em;
-    width:1.3em
-}
+#indexPage .sectionTitle {
+    align-items: center;
+    color: #FFFFFFCC;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  #indexPage .sectionTitle:before {
+    background: #FFFFFFCC;
+    content: "";
+    height: 0.25em;
+    border-radius: 50px;
+    margin-right: 0.5em;
+    width: 0.25em;
+    display: inline-block;
+  }
+  #indexPage .sectionTitle::after {
+    background: #FFFFFFCC;
+    content: "";
+    height: 0.25em;
+    border-radius: 50px;
+    margin-left: 0.5em;
+    width: 0.25em;
+    display: inline-block;
+  }
