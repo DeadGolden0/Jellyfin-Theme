@@ -8,7 +8,7 @@
     --primary-accent-color: rgba(var(--primary-r), var(--primary-g), var(--primary-b), 1.0);
     --secondary-accent-color: #00a4dc20;
     --primary-background-color: #101010;
-    --secondary-background-color: #181818;
+    --secondary-background-color: #804949; /* #181818 */
     --primary-background-transparent: rgba(35,35,35,0.5);
     --secondary-background-transparent: rgba(0,0,0,0.6);
     --rounded-cards: 15px;
@@ -593,7 +593,7 @@ html,
 .btnRefresh,
 #btnShutdown,
 .raised {
-    border-radius: 100px !important;
+    border-radius: var(--rounded-cards) !important; /* 100px */
 }
 .button-submit {
     background: var(--primary-accent-color) !important;
@@ -631,7 +631,7 @@ html,
 }
 /* Rounded tab selections in dashboard */
 .layout-desktop .localnav {
-    border-radius: 100px !important;
+    border-radius: var(--rounded-cards) !important; /* 100px */
     background: #202020 !important;
     width: fit-content !important;
 }
@@ -640,7 +640,7 @@ html,
 }
 .layout-desktop div[data-role="controlgroup"] a.ui-btn-active {
     background: var(--primary-accent-color) !important;
-    border-radius: 100px !important;
+    border-radius: var(--rounded-cards) !important; /* 100px */
 }
 .layout-desktop .dashboardDocument .mainAnimatedPage {
     left: 260px !important;
@@ -1243,11 +1243,11 @@ html,
     display: none;
 }
 
-#indexPage .sectionTitle:hover:not(.section0 .sectionTitle) {
+#indexPage .sectionTitle:hover:not(.section0 .sectionTitle):not(.section1 .sectionTitle) {
     position: relative;
 }
 
-#indexPage .sectionTitle:hover:not(.section0 .sectionTitle)::after {
+#indexPage .sectionTitle:hover:not(.section0 .sectionTitle):not(.section1 .sectionTitle)::after {
     content: "";
     position: absolute;
     bottom: -2px;
@@ -1256,6 +1256,7 @@ html,
     height: 2px;
     background: currentColor;
 }
+
 
 /* CustomCSS textentry */
 #txtCustomCss,
