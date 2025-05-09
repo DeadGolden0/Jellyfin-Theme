@@ -8,7 +8,7 @@
     --primary-accent-color: rgba(var(--primary-r), var(--primary-g), var(--primary-b), 1.0);
     --secondary-accent-color: #00a4dc20;
     --primary-background-color: #101010;
-    --secondary-background-color: #804949; /* #181818 */
+    --secondary-background-color: #181818; /* #181818 */
     --primary-background-transparent: rgba(35,35,35,0.5);
     --secondary-background-transparent: rgba(0,0,0,0.6);
     --rounded-cards: 15px;
@@ -706,7 +706,7 @@ html,
     margin-inline: auto !important;
 }
 .MuiList-subheader .MuiListItemButton-root.MuiListItemButton-gutters {
-    border-radius: 100px !important;
+    border-radius: var(--rounded-cards) !important; /* 100px */
     margin: 2px 0px !important;
     transition: .2s !important;
     height: 45px !important
@@ -791,7 +791,7 @@ html,
 }
 #editItemMetadataPage .btnHeaderSave {
     background: var(--primary-accent-color) !important;
-    border-radius: 100px !important;
+    border-radius: 100px !important; 
     height: 40px !important;
     color: white !important;
 }
@@ -828,7 +828,7 @@ html,
 /* Add card around top-right buttons */
 .mainDetailButtons {
     background: var(--primary-background-transparent) !important;
-    border-radius: 100px !important;
+    border-radius: var(--rounded-cards) !important; /* 100px */
     backdrop-filter: blur(var(--blur)) !important;
 }
 
@@ -991,7 +991,7 @@ html,
     padding-right: 20px !important;
     right: 110px !important;
     background: var(--primary-accent-color) !important;
-    border-radius: 100px !important;
+    border-radius: var(--rounded-cards) !important; /* 100px */
     color: var(--secondary-background-color) !important;
 }
 .layout-desktop .mainDetailButtons .detailButton {
